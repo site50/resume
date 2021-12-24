@@ -5,7 +5,6 @@
 	<meta name="description" content="EXPERIENCE WEB DEVELOPER" />
 	<meta name="keywords" content="EXPERIENCE WEB DEVELOPER" />
 	<meta name="robots" content="index,follow" />
-	
 	<link rel="stylesheet" type="text/css" href="css/css.css" />
 	<style>
 		.wrapper-box{
@@ -167,14 +166,12 @@
 				<div id="hello0">
 					<div id="experUp">PHP</div>
 					<div id="experUp">MYSQL</div>
-					<!-- relational database management system (RDBMS)  -->
 					<p id="wrap-p">&#10004;uses SQL queries</p>
 					<div id="experUp">Node.js</div>
 					<p id="wrap-p">&#10004; uses JavaScript on the server</p>
 					<p id="wrap-p">&#10004; uses Modules</p>
 					<div id="experUp">Express.js</div>
 					<p id="wrap-p">&#10004;forms processing</p>
-					<!-- обработка форм  -->
 					<div id="experUp">UwAmp</div>
 					<p id="wrap-p">&#10004;local server</p>
 					<div id="experUp"></div>
@@ -182,18 +179,15 @@
 			</div>
 			<div  id="ex-an">
 				<div class='exper2 anima2 b' ><div class='text-wrapper t' id="text-wrapper1">&#128073; </div>
-					<!-- 		верстка -->
 				</div>
 				<div id="hello1">
 					<h1></h1> 
 					<div id="experUp">Adaptive design
-						<!-- 	Верстка по разные устройства, адаптивный дизайн  -->
 					</div>
 					<p id="wrap-p">&#10004;@media query</p>
 					<p id="wrap-p">&#10004;&lt;meta name="viewport"&gt;</p>
 					<p id="wrap-p">&#10004;Bootstrap</p>
 					<div id="experUp">Cross Browser</div>
-					<!-- Кроссбраузерная верстка должна обеспечить максимально корректный показ сайта в любых современных и устаревших браузерах,   -->
 					<p id="wrap-p">&#10004;-webkit</p>
 					<p id="wrap-p">&#10004;-moz-</p>
 					<p id="wrap-p">&#10004;-o-</p>
@@ -203,7 +197,6 @@
 			</div>
 			<div  id="ex-an">
 				<div class='exper3 anima3 b' ><div class='text-wrapper t' id="text-wrapper2">&#128073; </div>
-					<!-- 		верстка  -->
 				</div>
 				<div id="hello2">
 					<div id="experUp">Framework</div> 
@@ -228,72 +221,70 @@
 			<span class="circle7">Angular</span>
 			<span class="center">Web developer</span>
 		</div>
-<div id='show-footer' ></div>
-	<body> 
-		<script type='text/javascript'>
-			function df(){
-				var btn=document.querySelectorAll('.b');
-				btn.forEach(bG);
-			}	
-			df();
-			function bG(btn, index){
-				btn.addEventListener('click', ()=>{
-					var el = document.getElementById("hello"+index );
+		<div id='show-footer' ></div>
+		<body> 
+			<script type='text/javascript'>
+				function df(){
+					var btn=document.querySelectorAll('.b');
+					btn.forEach(bG);
+				}	
+				df();
+				function bG(btn, index){
+					btn.addEventListener('click', ()=>{
+						var el = document.getElementById("hello"+index );
+						setTimeout(function() {
+							el.style = 'visibility: visible'; 	
+						},600);
+					})
+				}
+				var show_ex=document.getElementById('hello1');
+				show_ex=addEventListener('click',()=>{
 					setTimeout(function() {
-						el.style = 'visibility: visible'; 	
-					},600);
+						document.getElementById('line-center').style="visibility:hidden";
+					}, 300);
 				})
-			}
-			var show_ex=document.getElementById('hello1');
-			show_ex=addEventListener('click',()=>{
-				setTimeout(function() {
-					document.getElementById('line-center').style="visibility:hidden";
-					document.getElementById("hello1")[1].style="visibility:visible";
-				}, 300);
-			})
-			var line_ex=document.getElementById('line-center');
-			line_ex=addEventListener('click',()=>{
-				setTimeout(function() {
-					document.getElementById('line-center').style="visibility:hidden";
-					document.getElementById("hello1").style="visibility:visible";
-				}, 300);
-			})
-			var arr=[
-			{name:'&#128073; BACK END'},
-			{name:'&#128073; LAYOUT'},
-			{name:'&#128073; Framework'},
-			];
-			var arr1=[
-			{name:'&#128073; ВАК ЭНД'},
-			{name:'&#128073; ВЕРСТКА'},
-			{name:'&#128073; Фреймворк'},
-			]
-			function df5(){
-				var wrap=document.querySelectorAll('.b');
-				wrap.forEach(bG5);
-			}	
-			df5();
-			var flag=0;
-			function bG5(wrap, we){
-				var el5 = document.getElementById("text-wrapper"+we ); 
-				el5.innerHTML= arr[we].name;
-				wrap.addEventListener('mouseover', ()=>{
-					console.log(we);
-					if (flag==0){
-						var el5 = document.getElementById("text-wrapper"+we );
-						el5.innerHTML= arr[we].name;  	
-						flag=1;	
-					}
-					else{
-						var el5 = document.getElementById("text-wrapper"+we );
-						el5.innerHTML= arr1[we].name;  	
-						flag=0;	
-					}
+				var line_ex=document.getElementById('line-center');
+				line_ex=addEventListener('click',()=>{
+					setTimeout(function() {
+						document.getElementById('line-center').style="visibility:hidden";
+						document.getElementById("hello1").style="visibility:visible";
+					}, 300);
 				})
-			}	
-		</script>
+				var arr=[
+				{name:'&#128073; BACK END'},
+				{name:'&#128073; LAYOUT'},
+				{name:'&#128073; Framework'},
+				];
+				var arr1=[
+				{name:'&#128073; ВАК ЭНД'},
+				{name:'&#128073; ВЕРСТКА'},
+				{name:'&#128073; Фреймворк'},
+				]
+				function df5(){
+					var wrap=document.querySelectorAll('.b');
+					wrap.forEach(bG5);
+				}	
+				df5();
+				var flag=0;
+				function bG5(wrap, we){
+					var el5 = document.getElementById("text-wrapper"+we ); 
+					el5.innerHTML= arr[we].name;
+					wrap.addEventListener('mouseover', ()=>{
+						if (flag==0){
+							var el5 = document.getElementById("text-wrapper"+we );
+							el5.innerHTML= arr[we].name;  	
+							flag=1;	
+						}
+						else{
+							var el5 = document.getElementById("text-wrapper"+we );
+							el5.innerHTML= arr1[we].name;  	
+							flag=0;	
+						}
+					})
+				}	
+			</script>
 			<script src="folder1/footer.js"></script>
-		<script src="folder1/menu.js"></script>
-	</script>
-</body>
+			<script src="folder1/menu.js"></script>
+		</script>
+	</body>
 </html>
