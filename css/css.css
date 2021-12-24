@@ -15,11 +15,9 @@ html,body {
 #stage{
 	width:100%;
 	height: auto;
-	background-color:;
 }
 a{text-decoration: none;}
 #canvas{
-	position:;
 	padding-top:1rem;
 	padding-bottom:2rem;
 	display: block;
@@ -196,8 +194,9 @@ footer {
 		border-radius: 50% 0% 50% 0%;
 	}
 	100% {
-		border-radius: 50% 00% 50% 0%; background:yellow;
-		transform:    translate(88%,-90%);
+		border-radius: 50% 00% 50% 0%;
+		background:yellow;
+		transform: translate(88%,-90%);
 	}
 }
 .circle2 {
@@ -206,7 +205,7 @@ footer {
 	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
 	animation: circle2 5s ease-in-out;
-	animation-iteration-count:	1;
+	animation-iteration-count:1;
 	animation-fill-mode: forwards;
 }
 @-webkit-keyframes circle2{
