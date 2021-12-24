@@ -15,11 +15,9 @@ html,body {
 #stage{
 	width:100%;
 	height: auto;
-	background-color:;
 }
 a{text-decoration: none;}
 #canvas{
-	position:;
 	padding-top:1rem;
 	padding-bottom:2rem;
 	display: block;
@@ -157,8 +155,9 @@ footer {
 		border-radius: 50%;
 	}
 	75% {
-		transform: translateY(-150%, 150%) scale 3d(0.5);
-		border-radius: 50% 0% 50% 0%;background-color:#9be111;
+		transform: translateY(-150%, 150%) scale (0.5);
+		border-radius: 50% 0% 50% 0%;
+		background-color:#9be111;
 	}
 	
 	
@@ -192,11 +191,12 @@ footer {
 		border-radius: 50%;
 	}
 	75% {
-		transform: translateY(150%, -150%) scale 3d(0.5);
+		transform: translateY(150%, -150%) scale (0.5);
 		border-radius: 50% 0% 50% 0%;
 	}
 	100% {
-		border-radius: 50% 00% 50% 0%; background:yellow;
+		border-radius: 50% 00% 50% 0%;
+		background:yellow;
 		transform:    translate(88%,-90%);
 	}
 }
@@ -225,7 +225,7 @@ footer {
 		border-radius: 50%;
 	}
 	75% {
-		transform: translateX(-150%, 150%) scale 3d(0.5);
+		transform: translateX(-150%, 150%) scale (0.5);
 		border-radius: 0% 50% 0% 50%;
 		background-color:red;
 	}
@@ -260,7 +260,7 @@ footer {
 		border-radius: 50%;
 	}
 	75% {
-		transform: translateX(150%, -150%) scale 3d(0.5);
+		transform: translateX(150%, -150%) scale (0.5);
 		border-radius: 0% 50% 0% 50%;
 		background-color:red;
 	}
@@ -295,7 +295,7 @@ footer {
 		border-radius: 50%;
 	}
 	75% {
-		transform: translateX(150%, -250%) scale 3d(0.5);
+		transform: translateX(150%, -250%) scale (0.5);
 		border-radius: 50% 0% 50% 0%;
 		background-color:blue;
 	}
@@ -331,7 +331,7 @@ footer {
 		border-radius: 50%;
 	}
 	75% {
-		transform: translateX(-150%, 250%) scale 3d(0.5);
+		transform: translateX(-150%, 250%) scale (0.5);
 		border-radius: 50% 0% 50% 0%;
 		background-color:blue;
 	}
@@ -367,7 +367,7 @@ footer {
 		border-radius: 50%;
 	}
 	75% {
-		transform: translateY(-150%, 250%) scale 3d(0.5);
+		transform: translateY(-150%, 250%) scale (0.5);
 		border-radius: 0% 50% 0% 50%;
 		background-color:blue;
 	}
@@ -403,7 +403,7 @@ footer {
 		border-radius: 50%;
 	}
 	75% {
-		transform: translateY(150%, -150%) scale 3d(0.5);
+		transform: translateY(150%, -150%) scale (0.5);
 		border-radius: 0% 50% 0% 50%;
 		background-color:blue;
 	}
