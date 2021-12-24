@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>About I</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="WEB DEVELOPER" />
+	<meta name="keywords" content="WEB DEVELOPER, JAVASCRIPT" />
+	<meta name="robots" content="index,follow" />
+	
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	<style>
+		#warpper-about{
+		display: flex;
+		text-align: center;
+		background-color:orange;
+		width: 100%;  
+		height: 30%;
+		margin-bottom: 3em;
+		}
+		#photo-about,#text-about
+		{	
+		justify-content: center;
+		align-items: center;
+		background-color: azure;
+		margin: auto;
+		display: flex;
+		margin: 2em;
+		padding:1em;
+		}
+		#photo-about{
+		align-items: baseline;
+		height: 30%;
+		}
+		#text-about{
+		background-color:white;
+		line-height: 2em;
+		font-size: 1em;
+		justify-content: space-between;
+		text-align: justify;
+		display: inline;
+		width:100%;
+		position: relative;
+		animation-name:text-about;
+		animation-duration:3s;
+		transition: width 2s;
+		}
+		@keyframes text-about{
+		from { 
+		-webkit-transform: translateY(-100%)  matrix(1.2,0,0.5,1.2,50,0);                   } 
+		0% {
+		opacity: 0;
+		width: ;
+		background-color:green;
+		color:white;
+		}
+		50% {
+		opacity: 0.2;
+		width: ;
+		color:white;
+		}
+		100% {
+		opacity: 1;
+		width: ;
+		background-color:white;
+		}
+		}
+		ul{
+		line-height: 0.3;
+		padding: 1em;
+		}
+		#circle{
+		text-align: justify;
+		margin-top: 1em;
+		padding: 1em;
+		}
+		h5{
+		line-height: 2;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+		font-size: 0.8em;
+		}
+		h5:hover {
+		background-color: orange;
+		box-shadow: 6px 9px 5px 1px #323232c2;
+		border-radius: 10px;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+		}
+	</style>
+	<div id="stage">
+		<div id="show-menu"></div>
+		<div id="warpper-about">
+			<div id="photo-about">
+				<div ><img src="./image/ri5.jpg"  />
+				</div>
+			</div>
+			<div id="text-about">
+				<div>
+					<div id="show0" class='st' >		
+						<h5 class='text-wrapper t' id="text-wrapper0">&#128073; </h5>
+						<h5 class='text-wrapper t' id="text-wrapper1">&#128073; </h5>
+						<h5 class='text-wrapper t' id="text-wrapper2">&#128073; </h5>
+						<h5 class='text-wrapper t' id="text-wrapper3">&#128073; </h5>
+						<h5 class='text-wrapper t' id="text-wrapper4">&#128073; </h5>
+						<h5 class='text-wrapper t' id="text-wrapper5">&#128073; </h5>
+						<h5 class='text-wrapper t' id="text-wrapper6">&#128073; </h5>
+						<h5 class='text-wrapper t' id="text-wrapper7">&#128073; </h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<div id='show-footer' ></div>
+<body> 
+	<script type='text/javascript'>
+		var arr=[
+		{name:'My name is Bogdanova Rimma'},
+		{name:'I live in Russia'},
+		{name:'I am Web developer, middle '},
+		{name:'I have experience using: JavaScipt, PHP, React, Angular, Vue, Jquery, Bootstrap and other'},
+		{name:'I have experience as a Front-end and few Back-end'},
+		{name:'I graduated from the University of Ufa with qualification of economist'},
+		{name:'I like to create an animated design using code logic'},
+		{name:'At the moment I haven`t experience of commercial work'},
+		];
+		var arr1=[
+		{name:'Меня зовут Богданова Римма'},
+		{name:'Я живу в России'},
+		{name:'Я Веб разработчик, мидл'},
+		{name:'Я имею опыт использования:JavaScipt, PHP, React, Angular, Vue, Jquery, Bootstrap и др'},
+		{name:'Я имею опыт в качестеве Front end разработчика и небольшой опыт в качестве Back and разработчика'},
+		{name:'У оконочила Университет в Уфе по специальности экономист'},
+		{name:'Мне нравится создавать анимированный дизайн, используя логику кода'},
+		{name:'На данный момент я не имею опыта коммерческой разработки'},
+		]
+		function df5(){
+			var wrap=document.querySelectorAll('.t');
+			wrap.forEach(bG5);
+		}	
+		df5();
+		function bG5(wrap, we){
+			var el5 = document.getElementById("text-wrapper"+we ); 
+			el5.innerHTML= arr[we].name;
+			wrap.addEventListener('mouseover', ()=>{
+				el5.innerHTML= arr1[we].name;
+				el5.style= "font-weight: 500";
+			})
+			wrap.addEventListener('mouseout', ()=>{
+				el5.innerHTML= arr[we].name;
+				el5.style= "font-weight: 600";
+			})
+		}	
+	</script>
+		<script src="folder1/footer.js"></script>
+		<script src="folder1/menu.js"></script>
+</script>
+</body>
+</html>
