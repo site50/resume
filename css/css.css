@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	line-height: 1;
+	line-height: 1em;
 }
 html,body {
 	background-color: #121212;
@@ -15,9 +15,11 @@ html,body {
 #stage{
 	width:100%;
 	height: auto;
+	background-color:;
 }
 a{text-decoration: none;}
 #canvas{
+	position:;
 	padding-top:1rem;
 	padding-bottom:2rem;
 	display: block;
@@ -130,7 +132,7 @@ footer {
 }
 .circle5 {
 	background-color: pink;
-	line-height: 0.9;
+	line-height: 0.9em;
 	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
 	animation: circle5 5s ease-in-out;
@@ -156,8 +158,7 @@ footer {
 	}
 	75% {
 		transform: translateY(-150%, 150%) scale (0.5);
-		border-radius: 50% 0% 50% 0%;
-		background-color:#9be111;
+		border-radius: 50% 0% 50% 0%;background-color:#9be111;
 	}
 	
 	
@@ -168,7 +169,7 @@ footer {
 }
 .circle1 {
 	background-color: yellow;
-	line-height: 0.9;
+	line-height: 0.9em;
 	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
 	animation: circle1 5s ease-in-out;
@@ -195,14 +196,13 @@ footer {
 		border-radius: 50% 0% 50% 0%;
 	}
 	100% {
-		border-radius: 50% 00% 50% 0%;
-		background:yellow;
+		border-radius: 50% 00% 50% 0%; background:yellow;
 		transform:    translate(88%,-90%);
 	}
 }
 .circle2 {
 	background-color: #27b6d7;
-	line-height: 0.9;
+	line-height: 0.9em;
 	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
 	animation: circle2 5s ease-in-out;
@@ -237,7 +237,7 @@ footer {
 }
 .circle3 {
 	background-color: yellow;
-	line-height: 0.9;
+	line-height: 0.9em;
 	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
 	animation: circle3 5s ease-in-out;
@@ -272,7 +272,7 @@ footer {
 }
 .circle4 {
 	background-color: red;
-	line-height: 0.9;
+	line-height: 0.9em;
 	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
 	animation: circle4 5s ease-in-out;
@@ -308,7 +308,7 @@ footer {
 }
 .circle0 {
 	background-color: #27b6d7;
-	line-height: 0.9;
+	line-height: 0.9em;
 	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
 	animation: circle0 5s ease-in-out;
@@ -344,7 +344,7 @@ footer {
 }
 .circle6 {
 	background-color: yellow;
-	line-height: 0.9;
+	line-height: 0.9em;
 	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
 	animation: circle6 5s ease-in-out;
@@ -380,7 +380,7 @@ footer {
 }
 .circle7 {
 	background-color: #0ff0;
-	line-height: 0.9;
+	line-height: 0.9em;
 	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
 	animation: circle7 5s ease-in-out;
