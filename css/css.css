@@ -15,13 +15,16 @@ html,body {
 #stage{
 	width:100%;
 	height: auto;
+	display: grid;
 }
 a{text-decoration: none;}
-#canvas{
+canvas{
 	padding-top:1rem;
 	padding-bottom:2rem;
 	display: block;
-	width:100%;
+	width:80%;
+	background: #121212;
+	margin: auto;
 }
 #span1:hover {
 	color:#fdf1f1;
@@ -98,12 +101,12 @@ footer {
 	right: 0;
 	flex: 1 0 auto;
 	position: absolute;
+	padding-left: 1em;
 }	
 #line-center {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-left:2em;
 	font-weight: 200;
 	transition:opacity 3s;
 }
@@ -125,21 +128,16 @@ footer {
 	position: absolute;
 	top: 35%;
 	line-height: 1em;
-	
-	
 }
 .circle5 {
 	background-color: pink;
 	line-height: 0.9em;
-	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
 	animation: circle5 5s ease-in-out;
 	animation-iteration-count:	1;
 	animation-fill-mode: forwards;
-	
-	
 }
-@-webkit-keyframes circle5{
+@keyframes circle5{
 	0% {
 		transform: translate(0%);
 		border-radius: 20%;
@@ -154,12 +152,6 @@ footer {
 		background-color:yellow;
 		border-radius: 50%;
 	}
-	75% {
-		transform: translateY(-150%, 150%) scale (0.5);
-		border-radius: 50% 0% 50% 0%;background-color:#9be111;
-	}
-	
-	
 	to {
 		border-radius: 50% 00% 50% 0%; 
 		transform:translate(-85%,83%); 
@@ -168,13 +160,12 @@ footer {
 .circle1 {
 	background-color: yellow;
 	line-height: 0.9em;
-	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
 	animation: circle1 5s ease-in-out;
 	animation-iteration-count:	1;
 	animation-fill-mode: forwards;
 }
-@-webkit-keyframes circle1{
+@keyframes circle1{
 	0% {
 		transform: translate(0%);
 		border-radius: 20%;
@@ -189,26 +180,20 @@ footer {
 		background-color:red;
 		border-radius: 50%;
 	}
-	75% {
-		transform: translateY(150%, -150%) scale (0.5);
-		border-radius: 50% 0% 50% 0%;
-	}
 	100% {
-		border-radius: 50% 00% 50% 0%;
-		background:yellow;
-		transform: translate(88%,-90%);
+		border-radius: 50% 00% 50% 0%; background:yellow;
+		transform:    translate(88%,-90%);
 	}
 }
 .circle2 {
 	background-color: #27b6d7;
 	line-height: 0.9em;
-	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
 	animation: circle2 5s ease-in-out;
-	animation-iteration-count:1;
+	animation-iteration-count:	1;
 	animation-fill-mode: forwards;
 }
-@-webkit-keyframes circle2{
+@keyframes circle2{
 	0% {
 		transform: translate(0%);
 		border-radius: 20%;
@@ -223,11 +208,6 @@ footer {
 		background-color:fuchsia;
 		border-radius: 50%;
 	}
-	75% {
-		transform: translateX(-150%, 150%) scale (0.5);
-		border-radius: 0% 50% 0% 50%;
-		background-color:red;
-	}
 	100% {
 		border-radius: 0% 50% 0% 50%; 
 		transform:   translate(-97%,-79%);
@@ -237,13 +217,12 @@ footer {
 .circle3 {
 	background-color: yellow;
 	line-height: 0.9em;
-	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
 	animation: circle3 5s ease-in-out;
 	animation-iteration-count:	1;
 	animation-fill-mode: forwards;
 }
-@-webkit-keyframes circle3{
+@keyframes circle3{
 	0% {
 		transform: translate(0%);
 		border-radius: 20%;
@@ -258,11 +237,6 @@ footer {
 		background-color:fuchsia;
 		border-radius: 50%;
 	}
-	75% {
-		transform: translateX(150%, -150%) scale (0.5);
-		border-radius: 0% 50% 0% 50%;
-		background-color:red;
-	}
 	100% {
 		border-radius: 0% 50% 0% 50%; 
 		transform:  translate(87%,79%);
@@ -272,13 +246,12 @@ footer {
 .circle4 {
 	background-color: red;
 	line-height: 0.9em;
-	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
 	animation: circle4 5s ease-in-out;
 	animation-iteration-count:	1;
 	animation-fill-mode: forwards;
 }
-@-webkit-keyframes circle4{
+@keyframes circle4{
 	0% {
 		transform: translate(0%);
 		border-radius: 20%;
@@ -293,11 +266,6 @@ footer {
 		background-color:green;
 		border-radius: 50%;
 	}
-	75% {
-		transform: translateX(150%, -250%) scale (0.5);
-		border-radius: 50% 0% 50% 0%;
-		background-color:blue;
-	}
 	100% {
 		border-radius: 50% 0% 50% 0%; 
 		transform:translate(119%,-15%) rotate(
@@ -308,13 +276,12 @@ footer {
 .circle0 {
 	background-color: #27b6d7;
 	line-height: 0.9em;
-	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
 	animation: circle0 5s ease-in-out;
 	animation-iteration-count:	1;
 	animation-fill-mode: forwards;
 }
-@-webkit-keyframes circle0{
+@keyframes circle0{
 	0% {
 		transform: translate(0%);
 		border-radius: 20%;
@@ -329,11 +296,6 @@ footer {
 		background-color:green;
 		border-radius: 50%;
 	}
-	75% {
-		transform: translateX(-150%, 250%) scale (0.5);
-		border-radius: 50% 0% 50% 0%;
-		background-color:blue;
-	}
 	100% {
 		border-radius: 50% 0% 50% 0%; 
 		transform:translate(-119%,15%) rotate(
@@ -344,13 +306,12 @@ footer {
 .circle6 {
 	background-color: yellow;
 	line-height: 0.9em;
-	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
 	animation: circle6 5s ease-in-out;
 	animation-iteration-count:	1;
 	animation-fill-mode: forwards;
 }
-@-webkit-keyframes circle6{
+@keyframes circle6{
 	0% {
 		transform: translate(0%);
 		border-radius: 20%;
@@ -365,11 +326,6 @@ footer {
 		background-color:green;
 		border-radius: 50%;
 	}
-	75% {
-		transform: translateY(-150%, 250%) scale (0.5);
-		border-radius: 0% 50% 0% 50%;
-		background-color:blue;
-	}
 	100% {
 		border-radius: 0% 50% 0% 50%; 
 		transform:translate(-5%,-128%) rotate( 
@@ -380,13 +336,12 @@ footer {
 .circle7 {
 	background-color: #0ff0;
 	line-height: 0.9em;
-	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
 	animation: circle7 5s ease-in-out;
 	animation-iteration-count:	1;
 	animation-fill-mode: forwards;
 }
-@-webkit-keyframes circle7{
+@keyframes circle7{
 	0% {
 		transform: translate(0%);
 		border-radius: 20%;
@@ -401,11 +356,6 @@ footer {
 		background-color:green;
 		border-radius: 50%;
 	}
-	75% {
-		transform: translateY(150%, -150%) scale (0.5);
-		border-radius: 0% 50% 0% 50%;
-		background-color:blue;
-	}
 	100% {
 		border-radius: 0% 50% 0% 50%;
 		transform: translate(5%,128%) rotate( 
@@ -415,16 +365,15 @@ footer {
 }
 .center {
 	background-color: orange;
-	-webkit-animation-delay: 1.5s;
 	animation-delay: 1.5s;
-	-webkit-animation: center 5s ease-in-out, width 3s;
+	animation-delay: 1.5s;
 	animation: center 5s ease-in-out, width 3s;
 	animation-iteration-count:	1;
 }
 @keyframes center {
 	0% {
 		border-radius: 50%;
-		transform: rotateY(0), rotate(-45deg);
+		transform: rotate(0deg);
 		background-color:orange;
 	}
 	25% {
