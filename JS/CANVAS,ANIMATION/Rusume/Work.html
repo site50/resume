@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>My work</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Work web developer Rimma Bogdanova" />
+	<meta name="keywords" content="web developer, javascript, php, mysql, express, CSS, HTML" />
+	<meta name="robots" content="index,follow" />
+	<link rel="stylesheet" type="text/css" href="./css/css.css" />
+	<style>
+		[class^="my-work"] 
+		{
+		width:100%;
+		height:8em;
+		background-image: url(./image/conver.jpg);
+		background-size: 100% 100%;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		cursor: pointer;
+		margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.6em;
+		border-radius: 10px;
+		}
+		.my-work2 {background-image: url(./image/st1.jpg); }
+		.my-work3 {background-image: url(./image/flay.jpg);}
+		.my-work4 {background-image: url(./image/cat.jpg);}
+		.my-work5 {background-image: url(./image/react1.jpg);}
+		.my-work6 {background-image: url(./image/react2.jpg);}
+		.my-work7 {background-image: url(./image/eng.jpg);}
+		.my-work8 {background-image: url(./image/rimma.jpg);}
+		.my-work9 {background-image: url(./image/vue1.jpg);}
+		[id^="cont"] 
+		{
+		display: flex;
+		justify-content:center;
+		width: 48em;
+		}
+		.my-work1 { 
+		transition: 5s;
+		}
+		.my-work1.anima1 { 
+		transform: translate3d(0em, 18em, 0em);
+		}
+		.my-work2 { 
+		transition: 5s;
+		}
+		.my-work2.anima2 { 
+		transform:translate3d(0em, 18em, 0em);
+		}
+		.my-work3 { 
+		transition: 5s;
+		}
+		.my-work3.anima3 { 
+		transform: translate3d(0em, 18em, 0em);
+		}
+		.my-work7 { 
+		transition: 5s;
+		}
+		.my-work7.anima7 { 
+		transform: translate3d(0em, -18em, 0em);
+		}
+		.my-work8 { 
+		transition: 5s;
+		}
+		.my-work8.anima8 { 
+		transform: translate3d(0em, -18em, 0em);
+		}
+		.my-work9 { 
+		transition: 5s;
+		}
+		.my-work9.anima9 { 
+		transform: translate3d(0em, -18em, 0em);
+		}
+		.my-work4 { 
+		transition: 5s;
+		}
+		.my-work4.anima4 { 
+		transform: translate3d(0.1em, 0em, 0em);
+		}
+		.my-work6 { 
+		transition: 5s;
+		}
+		.my-work6.anima6 { 
+		transform: translate3d(-0.1em, 0em, 0em);
+		}
+		.wrapper{
+		background-color:#fbae0f;
+		padding: 1em 1em;
+		border-radius: 10px 10px;
+		transition: border-radius 2s, background-color 1s, width 5s, height 5s;
+		}
+		.wrapper:hover{
+		border-radius: 10px 10px 10px 10px;
+		background-color: green;
+		width: 100%;
+		height: 6em;
+		text-align: center;
+		justify-content: center;
+		display: grid;
+		align-items: center;
+		color:white;
+		border: 2px solid white;
+		}
+		a{
+		text-decoration: none;
+		color: black;
+		}
+		.all-work{
+		width: 100%;
+	height: 29em;
+	max-height:32em;
+	margin:0 auto;
+		justify-content: center;
+		display: grid;
+		line-height: 0.4;
+
+		}
+		[id^="hello"] {
+		display:none;
+		}
+		[id^="hello"]:hover {
+		color:white;
+		}
+		#span1{
+	margin: 0.2em 0.7em
+		}
+		#show-menu {
+    position: inherit;
+}
+
+	</style>
+	<body>	<div id='show-menu' ></div>
+		<div id="stage">
+			<div class="all-work" >
+				<div id="cont">
+					<div class="my-work1" id="my-work1"><div class="wrapper"><a href="https://codesandbox.io/s/ih08q" target="_blanck">&rarr;SPA convertor App<p id="hello0"></p></a></div></div>
+					<div class="my-work2" id="my-work2"><div class="wrapper"><a href="https://site50.github.io/cat/jq2.html " target="_blanck">&rarr;
+						Website for Kids</a><p id="hello1">1</p></div></div>
+					<div class="my-work3" id="my-work3"><div class="wrapper"><a href="https://site50.github.io/fairy.html " target="_blanck">&rarr;SVG graphik</a><div id="hello2">2</div></div></div>
+				</div>
+				<div id="cont1">
+					<div class="my-work4" id="my-work4"><div class="wrapper"><a href="https://site50.github.io/cats/cat.html " target="_blanck">&rarr;Website about cats</a><p id="hello3"></p></div></div>
+					<div class="my-work5" id="my-work5"><div class="wrapper"><a href="https://codesandbox.io/s/xcoes" target="_blanck">&rarr;Page with REACT</a><p id="hello4"></p></div></div>
+					<div class="my-work6" id="my-work6"><div class="wrapper"><a href="https://codesandbox.io/s/xz95q?file=/src/App.js" target="_blanck">&rarr;Page with REACT</a><p id="hello5"></p></div></div>
+				</div>
+				<div id="cont2">
+					<div class="my-work7" id="my-work7"><div class="wrapper"><a href="https://site50.github.io/english/Home.html" target="_blanck">&rarr;Learning Enlglish</a><p id="hello6"></p></div></div>
+					<div class="my-work8" id="my-work8"><div class="wrapper"><a href="https://site50.github.io/artri/home.html" target="_blanck">&rarr;My Hobby Website</a><p id="hello7"></p></div></div>
+					<div class="my-work9" id="my-work9"><div class="wrapper"><a href="https://site50.github.io/note/homenote.html" target="_blanck">&rarr;Page with VUE</a><p id="hello8"></p></div></div>
+				</div>
+			</div>	
+		</div>
+<div id='show-footer' ></div>
+	<script>
+		var arr=['<br>REACT<br> App<br><br>',
+		'JavaScript<br> HTML<br>CSS',
+		'SVG<br><br><br>',
+		' jQuery<br>HTML<br>Bootstrap<br>CSS',
+		'REACT<br>Bootstrap<br><br>',
+		'REACT<br>Bootstrap<br><br>',
+		'Jquery<br>Bootstrap<br>JavaScript<br>CSS',
+		'JavaScript<br> Jquery<br> PHP<br>HTML<br>Bootstrap',
+		 
+		'Vue.js <br>HTML<br><br>'];
+		for(var i=0; i<arr.length;i++)
+		{document.getElementById('hello'+i).innerHTML= arr[i];}	
+		var index=0;
+		function df(){
+			var btn=document.querySelectorAll('.wrapper');
+			btn.forEach(bG);
+		}	
+		df();
+		function bG(btn, index){
+			btn.addEventListener('mouseover', ()=>{
+				var el = document.getElementById("hello"+index );
+				setTimeout(function() {
+					el.style = 'display: block'; 	
+				},100);
+			})
+			btn.addEventListener('mouseout', ()=>{
+				var el = document.getElementById("hello"+index );
+				setTimeout(function() {
+					el.style = 'display: none'; 	
+				},100);
+			})
+		}
+		const obseveA = (entries, observer) => {
+			entries.forEach(entry => {
+				entry.target.classList.toggle("anima1", entry.isIntersecting);
+				entry.target.classList.toggle("anima7", entry.isIntersecting);
+				entry.target.classList.toggle("anima2", entry.isIntersecting);
+				entry.target.classList.toggle("anima8", entry.isIntersecting);
+				entry.target.classList.toggle("anima3", entry.isIntersecting);
+				entry.target.classList.toggle("anima9", entry.isIntersecting);
+				entry.target.classList.toggle("anima4", entry.isIntersecting);
+				entry.target.classList.toggle("anima6", entry.isIntersecting);
+			});
+		};
+		const Obs = new IntersectionObserver(obseveA);
+		const obsOptions = {}; 
+		const allBox = document.querySelectorAll('.my-work1,.my-work7,.my-work2,.my-work8,.my-work3,.my-work9,.my-work4,.my-work6');
+		allBox.forEach(EL => {
+			Obs.observe(EL, obsOptions);
+		});
+	</script>
+		<script src="folder1/footer.js"></script>
+		<script src="folder1/menu.js"></script>
+</body>
+</html>			
