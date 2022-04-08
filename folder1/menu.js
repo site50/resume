@@ -11,7 +11,7 @@ document.getElementById("show-menu").innerHTML =
 +'<a href="Home.html">Home</a>'
 +'<a href="About.html">About me</a>'
 +'<a href="Experience.html">Experience</a>'
-+'<a href="Works.html">My work</a>'
++'<a href="Work.html">My works</a>'
 +'</div>'
 +'</div>'
 +'<span  id="span1"  onclick="openMenu()">&#9776; </span>';
