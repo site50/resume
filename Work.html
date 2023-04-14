@@ -134,85 +134,110 @@
 		}
 
 	</style>
-	<body>	<div id='show-menu' ></div>
-		<div id="stage">
-			<div class="all-work" id="">
-				<div id="cont">
-<div class="my-work1" id="my-work1"><a href="https://codesandbox.io/s/ih08q" target="_blanck"><div class="wrapper">&rarr;SPA convertor App<p id="hello0"></p></div></a></div>
-<div class="my-work2" id="my-work2"><a href="https://site50.github.io/1.html" target="_blanck"><div class="wrapper">&rarr;Page with JavaScript<p id="hello1">1</p></div></a></div>
-<div class="my-work3" id="my-work3"><a href="https://site50.github.io/fairy.html " target="_blanck"><div class="wrapper">&rarr;SVG graphik<div id="hello2">2</div></div></a></div>
-				</div>
-				<div id="cont1">
-<div class="my-work4" id="my-work4"><a href="https://site50.github.io/cats/cat.html " target="_blanck"><div class="wrapper">&rarr;Site about cats<p id="hello3"></p></div></a></div>
-<div class="my-work5" id="my-work5"><a href="https://codesandbox.io/s/xcoes" target="_blanck"><div class="wrapper">&rarr;Page with REACT<p id="hello4"></p></div></a></div>
-<div class="my-work6" id="my-work6"><a href="https://codesandbox.io/s/angular-routing-rita-xu91l" target="_blanck"><div class="wrapper">&rarr;Page with ANGULAR<p id="hello5"></p></div></a></div>
-				</div>
-				<div id="cont2">
-<div class="my-work7" id="my-work7"><a href="https://site50.github.io/trainer/index.html" target="_blanck"><div class="wrapper">&rarr;Learning Enlglish<p id="hello6"></p></div></a></div>
-<!--div class="my-work8" id="my-work8"><a href="https://site50.github.io/artri/home.html" target="_blanck"><div class="wrapper">&rarr;Code examples:Angular, JS<p id="hello7"></p></div></a></div-->
-
-<div class="my-work8" id="my-work8"><div class="wrapper">&rarr;Example code: <p id="hello7"></p></div></div>
-
-<div class="my-work9" id="my-work9"><a href="https://site50.github.io/note/homenote.html" target="_blanck"><div class="wrapper">&rarr;Page with VUE<p id="hello8"></p></div></a></div>
-				</div>
-			</div>	
-		</div>
-<div id='show-footer' ></div>
+<body>
+  <div id='show-menu'></div>
+  <div id="stage">
+    <div class="all-work" id="">
+      <div id="cont">
+        <div class="my-work1" id="my-work1"><a href="https://codesandbox.io/s/ih08q" target="_blanck">
+            <div class="wrapper">&rarr;SPA convertor App<p id="hello0"></p>
+            </div>
+          </a></div>
+        <div class="my-work2" id="my-work2"><a href="https://site50.github.io/1.html" target="_blanck">
+            <div class="wrapper">&rarr;Page with JavaScript<p id="hello1">1</p>
+            </div>
+          </a></div>
+        <div class="my-work3" id="my-work3"><a href="https://site50.github.io/fairy.html " target="_blanck">
+            <div class="wrapper">&rarr;SVG graphik<div id="hello2">2</div>
+            </div>
+          </a></div>
+      </div>
+      <div id="cont1">
+        <div class="my-work4" id="my-work4"><a href="https://site50.github.io/cats/cat.html " target="_blanck">
+            <div class="wrapper">&rarr;Site about cats<p id="hello3"></p>
+            </div>
+          </a></div>
+        <div class="my-work5" id="my-work5"><a href="https://codesandbox.io/s/xcoes" target="_blanck">
+            <div class="wrapper">&rarr;Page with REACT<p id="hello4"></p>
+            </div>
+          </a></div>
+        <div class="my-work6" id="my-work6"><a href="https://codesandbox.io/s/angular-routing-rita-xu91l"
+            target="_blanck">
+            <div class="wrapper">&rarr;Page with ANGULAR<p id="hello5"></p>
+            </div>
+          </a></div>
+      </div>
+      <div id="cont2">
+        <div class="my-work7" id="my-work7"><a href="https://site50.github.io/trainer/index.html" target="_blanck">
+            <div class="wrapper">&rarr;Learning Enlglish<p id="hello6"></p>
+            </div>
+          </a></div>
+        <div class="my-work8" id="my-work8">
+          <div class="wrapper">&rarr;Example code: <p id="hello7"></p>
+          </div>
+        </div>
+        <div class="my-work9" id="my-work9"><a href="https://site50.github.io/note/homenote.html" target="_blanck">
+            <div class="wrapper">&rarr;Page with VUE<p id="hello8"></p>
+            </div>
+          </a></div>
+      </div>
+    </div>
+  </div>
+  <div id='show-footer'></div>
 	<script>
-		var arr=['<br>Component REACT<br>Example code<br>on <span>CodeSandbox</span><br>',
-		'Jquery<br> HTML<br>CSS', 			 
-		'SVG<br><br><br>',
-		' jQuery<br>HTML<br>Bootstrap<br>CSS',
-		'<br>Component REACT<br>Example code<br>on <span>CodeSandbox</span><br>Bootstrap<br>',
-		'<br>Component ANGULAR<br>Example code<br>on <span>CodeSandbox</span><br>Bootstrap<br>',
-		'Jquery<br>Bootstrap<br>JavaScript<br>CSS',
-		
-		'<a href="https://github.com/site50/angular_code" target="_blanck">Angular</a><br><a href="https://github.com/site50/codeexample/blob/main/Promise_js.html" target="_blanck">JavaScript</a>',			
-		
-	        'Vue.js <br>HTML<br><br>'];
-		
-		for(var i=0; i<arr.length;i++)
-		{document.getElementById('hello'+i).innerHTML= arr[i];}	
-		var index=0;
-		function df(){
-			var btn=document.querySelectorAll('.wrapper');
-			btn.forEach(bG);
-		}	
-		df();
-		function bG(btn, index){
-			btn.addEventListener('mouseover', ()=>{
-				var el = document.getElementById("hello"+index );
-				setTimeout(function() {
-					el.style = 'display: block'; 	
-				},100);
-			})
-			btn.addEventListener('mouseout', ()=>{
-				var el = document.getElementById("hello"+index );
-				setTimeout(function() {
-					el.style = 'display: none'; 	
-				},100);
-			})
-		}
-		const obseveA = (entries, observer) => {
-			entries.forEach(entry => {
-				entry.target.classList.toggle("anima1", entry.isIntersecting);
-				entry.target.classList.toggle("anima7", entry.isIntersecting);
-				entry.target.classList.toggle("anima2", entry.isIntersecting);
-				entry.target.classList.toggle("anima8", entry.isIntersecting);
-				entry.target.classList.toggle("anima3", entry.isIntersecting);
-				entry.target.classList.toggle("anima9", entry.isIntersecting);
-				entry.target.classList.toggle("anima4", entry.isIntersecting);
-				entry.target.classList.toggle("anima6", entry.isIntersecting);
-			});
-		};
-		const Obs = new IntersectionObserver(obseveA);
-		const obsOptions = {}; 
-		const allBox = document.querySelectorAll('.my-work1,.my-work7,.my-work2,.my-work8,.my-work3,.my-work9,.my-work4,.my-work6');
-		allBox.forEach(EL => {
-			Obs.observe(EL, obsOptions);
-		});
-	</script>
-		<script src="folder1/footer.js"></script>
-		<script src="folder1/menu.js"></script>
+		var arr = [
+  '<br>Component REACT<br>Example code<br>on <span>CodeSandbox</span><br>',
+  'Jquery<br> HTML<br>CSS',
+  'SVG<br><br><br>',
+  ' jQuery<br>HTML<br>Bootstrap<br>CSS',
+  '<br>Component REACT<br>Example code<br>on <span>CodeSandbox</span><br>Bootstrap<br>',
+  '<br>Component ANGULAR<br>Example code<br>on <span>CodeSandbox</span><br>Bootstrap<br>',
+  'Jquery<br>Bootstrap<br>JavaScript<br>CSS',
+  '<a href="https://github.com/site50/angular_code" target="_blanck">Angular</a><br><br><a href="https://github.com/site50/codeexample/blob/main/Promise_js.html" target="_blanck">JavaScript</a>',
+  'Vue.js <br>HTML<br><br>'
+			  ];
+
+for (var i = 0; i < arr.length; i++) { document.getElementById('hello' + i).innerHTML = arr[i]; }
+var index = 0;
+function df() {
+  var btn = document.querySelectorAll('.wrapper');
+  btn.forEach(bG);
+}
+df();
+function bG(btn, index) {
+  btn.addEventListener('mouseover', () => {
+    var el = document.getElementById("hello" + index);
+    setTimeout(function () {
+      el.style = 'display: block';
+    }, 100);
+  })
+  btn.addEventListener('mouseout', () => {
+    var el = document.getElementById("hello" + index);
+    setTimeout(function () {
+      el.style = 'display: none';
+    }, 100);
+  })
+}
+const obseveA = (entries, observer) => {
+  entries.forEach(entry => {
+    entry.target.classList.toggle("anima1", entry.isIntersecting);
+    entry.target.classList.toggle("anima7", entry.isIntersecting);
+    entry.target.classList.toggle("anima2", entry.isIntersecting);
+    entry.target.classList.toggle("anima8", entry.isIntersecting);
+    entry.target.classList.toggle("anima3", entry.isIntersecting);
+    entry.target.classList.toggle("anima9", entry.isIntersecting);
+    entry.target.classList.toggle("anima4", entry.isIntersecting);
+    entry.target.classList.toggle("anima6", entry.isIntersecting);
+  });
+};
+const Obs = new IntersectionObserver(obseveA);
+const obsOptions = {};
+const allBox = document.querySelectorAll('.my-work1,.my-work7,.my-work2,.my-work8,.my-work3,.my-work9,.my-work4,.my-work6');
+allBox.forEach(EL => {
+  Obs.observe(EL, obsOptions);
+});
+</script>
+  < script src = "folder1/footer.js" > </script>
+    < script src = "folder1/menu.js" > </script>
 </body>
 </html>			
